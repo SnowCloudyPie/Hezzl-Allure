@@ -1,0 +1,18 @@
+pm.test("Сервер отдал статус 200", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Записываем в переменную timeZone значение параметра time из ответа", function () {
+    var jsonData = pm.response.json();
+    pm.environment.set("timeZone", jsonData.time);
+});
+
+pm.test("Проверяем наличие параметра data в ответе", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property("data");
+});
+
+pm.test("Проверяем наличие параметра auth в data в ответе", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.data).to.have.property("auth");
+});
