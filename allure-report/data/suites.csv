@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Jul 22 08:05:01 MSK 2024","Mon Jul 22 08:05:01 MSK 2024","104","","","","","","ConfimCode",""
+"failed","Mon Jul 22 08:05:00 MSK 2024","Mon Jul 22 08:05:00 MSK 2024","501","","","","","","Login",""
+"passed","Mon Jul 22 08:05:00 MSK 2024","Mon Jul 22 08:05:01 MSK 2024","631","","","","","","Init",""
